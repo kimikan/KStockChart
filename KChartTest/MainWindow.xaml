@@ -1,0 +1,39 @@
+﻿<Window x:Class="KChartTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KChartTest"
+        xmlns:chart="clr-namespace:KChart.Chart;assembly=KChart"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+
+        <chart:KChart DataSource="{Binding KLines}"
+                           LowMemberPath="Low" HighMemberPath="High" LowMemberPath2="Amount" HighMemberPath2="Amount" >
+            <chart:KChart.Graphs>
+                <chart:StockGraph Brush="Red" LowMemberPath="Low" HighMemberPath="High" OpenMemberPath="Open" CloseMemberPath="Close">
+
+                </chart:StockGraph>
+                <chart:LineGraph Brush="Blue" ValueMemberPath="M2">
+
+                </chart:LineGraph>
+                <chart:LineGraph Brush="PaleGreen" ValueMemberPath="M5">
+
+                </chart:LineGraph>
+                <chart:LineGraph Brush="Red" ValueMemberPath="M5">
+
+                </chart:LineGraph>
+
+                <chart:LineGraph Brush="DarkBlue" ValueMemberPath="M5">
+
+                </chart:LineGraph>
+            </chart:KChart.Graphs>
+            <chart:KChart.OtherGraphs>
+                <chart:ColumnGraph Brush="PaleGreen" ValueMemberPath="Amount">
+
+                </chart:ColumnGraph>
+            </chart:KChart.OtherGraphs>
+        </chart:KChart>
+    </Grid>
+</Window>
