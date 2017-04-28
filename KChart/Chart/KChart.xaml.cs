@@ -15,6 +15,18 @@ namespace KChart.Chart
         public KChart()
         {
             InitializeComponent();
+			
+			
+            chartCanvas.SizeChanged += (d, arg) =>
+            {
+                if (DataSource != null)
+                    UpdateChart(arg.NewSize, false);
+            };
+            amountCanvas.SizeChanged += (d, arg) =>
+            {
+                if (DataSource != null)
+                    UpdateAmount(arg.NewSize, false);
+            };
         }
 
 
