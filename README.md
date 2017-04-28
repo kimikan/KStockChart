@@ -15,7 +15,7 @@ A wpf stock charting library support data binding &amp; MVVM
 	Demo1:<br/>![image](https://github.com/kimikan/KStockChart/blob/master/Resources/sample.gif)
 	
 	Demo2:<br/>
-	![image](https://github.com/kimikan/KStockChart/blob/master/Resources/test.png)
+	![image](https://github.com/kimikan/KStockChart/blob/master/Resources/sample.gif)
 	</p>
 </body>
 </html>
