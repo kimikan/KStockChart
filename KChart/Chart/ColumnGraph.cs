@@ -82,6 +82,9 @@ namespace KChart.Chart
 
         private void SetColumnSegments(int index, double lowest, double highest)
         {
+			if (index >= Values.Count)
+                return;
+			
             var item = Values[index];
             double width = IntervalWidth - 3;
             double left = Canvas.ActualWidth - (index + 1) * IntervalWidth;
