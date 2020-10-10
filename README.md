@@ -11,15 +11,11 @@ A wpf stock charting library support data binding &amp; MVVM
 3. all code less than 1000 lines, it's very easy to read and extend
 	</p>
 	
-	<p>
 	Demo1:<br/> 
 	![image](https://github.com/kimikan/KStockChart/blob/master/Resources/test.png)
-	</p>
 	
-	<p>
 	Demo2:<br/> 
 	![image](https://github.com/kimikan/KStockChart/blob/master/Resources/sample.gif)
-	</p>
 </body>
 </html>
 
